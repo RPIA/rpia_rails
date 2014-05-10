@@ -15,6 +15,9 @@ Bundler.require(*Rails.groups)
 
 module RpiaTraining
   class Application < Rails::Application
+  
+  
+  require 'dotenv' ; Dotenv.load ".env.local", ".env.#{Rails.env}"
 
     config.generators do |g|
       g.test_framework :rspec,
