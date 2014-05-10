@@ -3,8 +3,12 @@
     <h3>Sign up</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
-      <%= f.label :name %>
-      <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, :autofocus => true, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: 'form-control' %>
     </div>
     <div class="form-group">
       <%= f.label :email %>
@@ -18,6 +22,33 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
+    <div class="form-group">
+      <%= f.label :rin %>
+      <%= f.number_field :rin, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :rin %>
+      <%= f.number_field :rin, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :cell_number %>
+      <%= f.telephone_field :cell_number, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :home_number %>
+      <%= f.telephone_field :home_number, class: 'form-control' %>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :rpi_address %>
+      <%= f.text_area :rpi_address, class: 'form-control' %>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :home_address %>
+      <%= f.text_area :home_address, class: 'form-control' %>
+    </div>
+    
      <%= f.submit 'Sign up', :class => 'button right' %>
   <% end %>
 </div>

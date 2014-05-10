@@ -26,20 +26,19 @@ ActiveRecord::Schema.define(version: 20140510162838) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "rin"
-    t.string   "cellnumber"
-    t.string   "homenumber"
-    t.text     "addressrpi"
-    t.text     "addresshome"
+    t.string   "cell_number"
+    t.string   "home_number"
+    t.text     "rpi_address"
+    t.text     "home_address"
     t.integer  "roles_mask"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["firstname"], name: "index_users_on_firstname"
-  add_index "users", ["lastname"], name: "index_users_on_lastname"
+  add_index "users", ["first_name"], name: "index_users_on_first_name"
+  add_index "users", ["last_name"], name: "index_users_on_last_name"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
