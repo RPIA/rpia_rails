@@ -1,2 +1,10 @@
 <h3>User</h3>
 <p>Email: <%= @user.email if @user.email %></p>
+<p>Name: <%= @user.first_name if @user.first_name %> <%= @user.last_name if @user.last_name %></p>
+<p>Cell number: <%= @user.cell_number if @user.cell_number %>
+Home number: <%= @user.home_number if @user.home_number %> </p>
+<p>RIN: <%= @user.rin if @user.rin %> </p>
+<p>RPI Address: <%= @user.rpi_address if @user.rpi_address %> </p>
+<p>Home Address: <%= @user.home_address if @user.home_address %> </p>
+
+<%= link_to "Edit", edit_user_path(@user) %>

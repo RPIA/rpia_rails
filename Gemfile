@@ -21,13 +21,14 @@ gem 'cancancan'
 gem 'role_model'
 group :development do
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
   gem 'rails_layout'
 end
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'rspec-rails', '>= 3.0.0.beta2'
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'pry'
+  gem 'pry-nav'
 end
 group :test do
   gem 'capybara'

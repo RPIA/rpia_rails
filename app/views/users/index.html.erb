@@ -3,6 +3,13 @@
     <h3>Users</h3>
     <div class="column">
       <table class="table">
+      <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <% if current_user.admin? %>
+          <th>Show</th>
+          <th>Edit</th>
+        <% end %>
         <tbody>
           <% @users.each do |user| %>
             <tr>

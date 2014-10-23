@@ -255,7 +255,7 @@ DEPENDENCIES
   rails_admin
   rails_layout
   role_model
-  rspec-rails (>= 3.0.0.beta2)
+  rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   selenium-webdriver
